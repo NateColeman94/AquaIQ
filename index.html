@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AquaIQ | Municipal Pool Operations AI</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">AQ</div>
+      <div>
+        <h1>AquaIQ</h1>
+        <p>Municipal Pool Operations AI</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#dashboard" class="active">Dashboard</a>
+      <a href="#water">Water Quality</a>
+      <a href="#attendance">Attendance</a>
+      <a href="#staffing">Staffing</a>
+      <a href="#maintenance">Maintenance</a>
+      <a href="#inventory">Inventory</a>
+      <a href="#recommendations">AI Recommendations</a>
+      <a href="#report">Daily Report</a>
+    </nav>
+    <div class="pilot-card">
+      <span class="eyebrow">Build v1 Pilot</span>
+      <strong>Gandy Pool</strong>
+      <small>404 Imperial Blvd, Lakeland, FL</small>
+    </div>
+  </aside>
+
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Pilot Facility</p>
+        <h2 id="facilityName">Gandy Pool</h2>
+        <p id="facilityMeta">Lakeland, Florida</p>
+      </div>
+      <div class="controls">
+        <label for="facilitySelect">Facility</label>
+        <select id="facilitySelect">
+          <option value="gandy">Gandy Pool</option>
+          <option value="simpson" disabled>Simpson Park Pool - Future</option>
+          <option value="custom" disabled>Custom Pool - Future</option>
+        </select>
+      </div>
+    </header>
+
+    <section id="dashboard" class="hero panel">
+      <div>
+        <p class="eyebrow">Today’s AI Operations Brief</p>
+        <h3 id="dailyBrief">Loading daily brief...</h3>
+        <p id="dailyBriefSub"></p>
+      </div>
+      <button id="generateReportBtn">Generate Daily Report</button>
+    </section>
+
+    <section class="grid metrics-grid" id="metricsGrid"></section>
+
+    <section class="grid two-col">
+      <article id="water" class="panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Water Quality</p>
+            <h3>Latest Chemical Readings</h3>
+          </div>
+          <span id="waterBadge" class="badge">Loading</span>
+        </div>
+        <div id="waterReadings" class="reading-list"></div>
+      </article>
+
+      <article id="attendance" class="panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Demand Forecast</p>
+            <h3>Attendance Outlook</h3>
+          </div>
+          <span id="attendanceBadge" class="badge">Loading</span>
+        </div>
+        <div class="chart-wrap"><canvas id="attendanceChart" width="600" height="280"></canvas></div>
+      </article>
+    </section>
+
+    <section class="grid two-col">
+      <article id="staffing" class="panel">
+        <p class="eyebrow">Staffing</p>
+        <h3>Lifeguard Recommendation</h3>
+        <div id="staffingCard" class="recommendation-card"></div>
+      </article>
+
+      <article id="maintenance" class="panel">
+        <p class="eyebrow">Maintenance</p>
+        <h3>Asset Risk Tracker</h3>
+        <div id="maintenanceList" class="stack"></div>
+      </article>
+    </section>
+
+    <section class="grid two-col">
+      <article id="inventory" class="panel">
+        <p class="eyebrow">Inventory</p>
+        <h3>Chemical Inventory Alerts</h3>
+        <div id="inventoryList" class="stack"></div>
+      </article>
+
+      <article id="recommendations" class="panel">
+        <p class="eyebrow">AI Recommendations</p>
+        <h3>Human-in-the-Loop Action Queue</h3>
+        <div id="recommendationList" class="stack"></div>
+      </article>
+    </section>
+
+    <section id="report" class="panel report-panel">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Executive Output</p>
+          <h3>Daily Operations Report</h3>
+        </div>
+        <button id="copyReportBtn">Copy Report</button>
+      </div>
+      <textarea id="reportText" rows="14" readonly></textarea>
+    </section>
+
+    <footer>
+      <p>AquaIQ Build v1 uses public facility context plus simulated operational data for demonstration and evaluation.</p>
+    </footer>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
