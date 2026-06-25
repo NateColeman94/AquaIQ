@@ -1,5 +1,16 @@
-# AquaIQ v1.5 - Gandy Pool Pilot
+# AquaIQ v1.6 — Gandy Pool Operations AI
 
-Single-file GitHub Pages prototype. v1.5 adds swim team schedule forecasting and lane demand planning to the existing weather-adjusted demand, swim lesson, pool party, staffing, water quality, inventory, and AI action modules.
+Single-file GitHub Pages prototype. Upload `index.html` to your GitHub repository root and enable GitHub Pages.
 
-Upload `index.html` to the root of your GitHub Pages repository.
+## v1.6 upgrades
+- Manager Control Panel
+- Recalculating demand model
+- Weather-adjusted open swim, lessons, parties, and swim team demand
+- Staff call-out inputs
+- Water chemistry inputs
+- AI Explainability section
+- Manager-reviewed recommendation queue
+- Daily report generator
+
+## Data note
+AquaIQ v1 uses realistic demo data for operations and live Open-Meteo weather when the browser can access the internet. Water chemistry and staffing inputs are manual in this version.
