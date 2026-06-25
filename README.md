@@ -1,16 +1,23 @@
-# AquaIQ — Municipal Pool Operations AI Assistant
+# AquaIQ v1.1 — Gandy Pool Pilot
 
-Build v1 pilot for Gandy Pool in Lakeland, Florida.
+AquaIQ is a GitHub Pages-ready static web application for a capstone Build v1 submission. This version is a single-file application, so upload only `index.html` to GitHub Pages.
 
-## How to run locally
-Open `index.html` in a browser.
+## What is included
+- Dashboard
+- Water quality analyzer
+- Attendance forecast
+- Staffing recommendation
+- Maintenance tracker
+- Inventory alerts
+- AI action queue
+- Human-in-the-loop workflow
+- Daily operations report generator
 
-## How to host on GitHub Pages
-1. Create a GitHub repository.
-2. Upload all files and folders in this package.
-3. Go to Settings > Pages.
-4. Select Deploy from branch, choose `main`, and select `/root`.
-5. Save and use the published GitHub Pages link as the Build v1 link.
-
-## Build v1 scope
-This prototype uses public facility context for Gandy Pool and simulated operational data for water quality, attendance, staffing, maintenance, and inventory. It demonstrates the product workflow, dashboard, recommendations, and human-in-the-loop daily report.
+## How to publish on GitHub Pages
+1. Create or open your GitHub repository.
+2. Click Add file > Upload files.
+3. Upload `index.html`.
+4. Commit changes.
+5. Go to Settings > Pages.
+6. Set source to Deploy from branch, branch to main, folder to /root.
+7. Save and wait for the published URL.
