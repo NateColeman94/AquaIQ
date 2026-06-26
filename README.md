@@ -1,12 +1,11 @@
-# AquaIQ v2.0
-Single-file GitHub Pages prototype. Upload index.html to your repository root.
+# AquaIQ v2.1
 
-New in v2.0:
-- Commercial software-style navigation shell
-- Editable manager control panel
-- Editable lifeguard schedule with no-show status
-- Editable swim lessons, parties, swim team blocks
-- Weather-adjusted demand engine
-- Explainable AI recommendations
-- Daily report generator
-- Local browser persistence using localStorage
+GitHub Pages-ready single-file app. Upload index.html to the repository root and commit changes.
+
+New in v2.1:
+- AI recommendation review workflow
+- Approve / Defer / Override buttons
+- Decision audit trail
+- Editable incident log
+- Editable maintenance and inventory retained from v2.0
+- Daily report includes incidents and approval decisions
