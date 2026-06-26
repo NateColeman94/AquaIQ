@@ -1,16 +1,13 @@
-# AquaIQ Feature-Ready v2.4
+# AquaIQ Stable Rollback
 
-This package keeps the stronger original AquaIQ application line and avoids the broken AquaIQPro sprint structure.
+Use this package to restore the working AquaIQ application.
 
-## What changed
-- Kept AquaIQ as the main project.
-- Rewrote the Reports section so reports read like manager-ready summaries.
-- Kept inventory purchase recommendations.
-- Kept water quality target range guidance.
-- Kept AI review, staffing, programs, forecasting, incidents, and manager controls.
+## Upload instructions
+1. Open your AquaIQ GitHub repository.
+2. Replace the root `index.html` with this `index.html`.
+3. Commit changes.
+4. Wait 1-2 minutes.
+5. Open https://natecoleman94.github.io/AquaIQ/
+6. Hard refresh with Ctrl + F5.
 
-## GitHub upload
-Upload `index.html` to the root of the existing AquaIQ repository and commit the change.
-
-Live URL after deploy:
-https://natecoleman94.github.io/AquaIQ/
+This rollback is based on the stronger AquaIQ line, not AquaIQPro.
